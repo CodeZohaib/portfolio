@@ -127,11 +127,17 @@
               <div class="col-lg-6"><br><br><br>
                 <ul>
                    <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span> Nowshera, Pakistan</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>24</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Address:</strong> <span>Dheri Katti Khel Nowshera</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>BSCS</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>kzohaib9000@gmail.com</span></li>
                 </ul>
               </div>
+
+             <center><div class="resume-item"><br><br>
+             <h4>CV Access</h4>
+              <h5>Download or View PDF Format</h5>
+              <p><em><a href="https://drive.google.com/file/d/1wDASlnjnzVUSW1dh6RyAkP3UdXwhQE_s/view?usp=drive_link" target="_blank">View or Download CV</a></em></p>
+            </div></center>
             </div>
            
           </div>
@@ -208,6 +214,13 @@
               </div>
             </div>
 
+            <div class="progress">
+              <span class="skill">Laravel FrameWork<i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
            
 
           </div>
@@ -244,12 +257,13 @@
               <h4>BS Computer Science</h4>
               <h5>2019 - 2023 Present</h5>
               <p><em>Northern University Nowshera KPK</em></p>
-              
+             <!-- <p><em><a href="https://drive.google.com/file/d/1ldRX5tulLGCUrtQ7EM8phcVi0yewZG9o/view?usp=drivesdk" target="_blank">View BSCS Degree</a></em></p> -->
             </div>
             <div class="resume-item">
               <h4>DAE Civil Engineering</h4>
               <h5>2015 - 2018</h5>
               <p><em>Pakistan Institute Of Professional Studies Nowshera</em></p>
+             <!-- <p><em><a href="https://drive.google.com/file/d/1RAB2aqWeuHtVnyo51oFaebikIc7oVMIz/view?usp=drivesdk" target="_blank">View DAE Certificate</a></em></p> -->
             </div>
 
              <div class="resume-item">
@@ -262,6 +276,7 @@
               <h4>SECONDARY EDUCATION</h4>
               <h5>2014 - 2015</h5>
               <p><em>Icon School Hakeem Abad Nowshera</em></p>
+            <!--  <p><em><a href="https://drive.google.com/file/d/1Fl84MNogdGy45W8GTeZQBpIyRBc88QzF/view?usp=drivesdk" target="_blank">View Matric Certificate</a></em></p> -->
             </div>
 
 
@@ -300,7 +315,7 @@
               <h4>PHP Core Developer (Self Practice & Projects)</h4>
               <h5>January 2020 – August 2023</h5>
               <p><em>3 Years of Practice in My Skill</em></p>
-              <p>I have worked on numerous backend projects, such as a lawyer management system, online chat application, event card maker, event sending email alert system, and academy management system. I have created many projects and gained a bundle of experience.</p>
+              <p>I have worked on numerous backend projects, such as a <a href="caseMangement-details.html"> Lawyer management system</a>, <a href="friendbook-details.html">FriendBook Application</a> like facebook,<a href="cardMaker-details.html"> Event card maker </a>, event sending email alert system, and <a href="academy-details.html"> Academy management system </a>. I have created many projects and gained a bundle of experience.</p>
             </div>
 
             <div class="resume-item">
@@ -325,12 +340,18 @@
 
         <div class="section-title">
           <h2>Portfolio</h2>
-                <center><h4>My Projects</h4></center>
+            <center>
+              <h4>Explore My Featured Projects</h4>
+                <p style="text-align:center; color:#555; font-size: 16px;">
+                  Click on a project below to explore detailed information, screenshots, and github repository link.
+                </p>
+                
+            </center><br>
 
           <div class="row" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li data-filter=".filter-friendbook" class="filter-active">FriendBook</li>
+              <li data-filter=".filter-friendbook" >FriendBook</li>
               <li data-filter=".filter-ediary">E-Diary</li>
               <li data-filter=".filter-academy">Academy MS</li>
               <li data-filter=".filter-caseMangement">lawyer Case MS</li>
@@ -469,7 +490,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-document.getElementById("projectDetailChange").innerHTML = projectContent = "<b>Friendbook</b> As part of my final year project, I created an online platform called FriendBook. This platform lets users sign up, log in, update profiles, make posts, view content, and interact with others. I handled user registration and login, post creation and viewing, as well as features like friend requests and messaging. Additionally, I designed an admin dashboard to review reported accounts and posts, emphasizing my skills in web development and user security.<br><br><b>FYP Project</b>: Northern University Nowshera<br><br><center><a href='friendbook-details.html' class='btn btn-info btn-sm'>View Full Detail</a></center>";
+//document.getElementById("projectDetailChange").innerHTML = projectContent = "<b>Friendbook</b> As part of my final year project, I created an online platform called FriendBook. This platform lets users sign up, log in, update profiles, make posts, view content, and interact with others. I handled user registration and login, post creation and viewing, as well as features like friend requests and messaging. Additionally, I designed an admin dashboard to review reported accounts and posts, emphasizing my skills in web development and user security.<br><br><b>FYP Project</b>: Northern University Nowshera<br><br><center><a href='friendbook-details.html' class='btn btn-info btn-sm'>View Full Detail</a></center>";
 
 document.addEventListener("DOMContentLoaded", function() {
       const portfolioFilters = document.querySelectorAll("#portfolio-flters li");
@@ -482,28 +503,34 @@ document.addEventListener("DOMContentLoaded", function() {
 
           switch (projectName) {
             case "FriendBook":
-              projectContent = "<b>Friendbook</b> As part of my final year project, I created an online platform called FriendBook. This platform lets users sign up, log in, update profiles, make posts, view content, and interact with others. I handled user registration and login, post creation and viewing, as well as features like friend requests and messaging. Additionally, I designed an admin dashboard to review reported accounts and posts, emphasizing my skills in web development and user security.<br><br><b>FYP Project</b>: Northern University Nowshera<br><br><center><a href='friendbook-details.html' class='btn btn-info btn-sm'>View Full Detail</a></center>";
+              window.location.href = "friendbook-details.html";
+              //projectContent = "<b>Friendbook</b> As part of my final year project, I created an online platform called FriendBook. This platform lets users sign up, log in, update profiles, make posts, view content, and interact with others. I handled user registration and login, post creation and viewing, as well as features like friend requests and messaging. Additionally, I designed an admin dashboard to review reported accounts and posts, emphasizing my skills in web development and user security.<br><br><b>FYP Project</b>: Northern University Nowshera<br><br><center><a href='friendbook-details.html' class='btn btn-info btn-sm'>View Full Detail</a></center>";
               break;
 
               case "E-Diary":
-               projectContent = "<b>E-Diary</b> Introducing our Event Alert E-Diary: It's like a helpful website for keeping track of events. You can create an account or log in easily. Then, you can put in important event info, like when and where it'll happen. Plus, you'll get emails to remind you about your events, so you don't forget them. It's really convenient and makes planning events simple! This project shows how I'm good at making things that people can use easily.<br><br><b>Client Name</b>: Ubaid Gohar<br><br><center><a href='ediary-details.html' class='btn btn-info btn-sm'>View Full Detail</a></center>";
+               window.location.href = "ediary-details.html";
+              // projectContent = "<b>E-Diary</b> Introducing our Event Alert E-Diary: It's like a helpful website for keeping track of events. You can create an account or log in easily. Then, you can put in important event info, like when and where it'll happen. Plus, you'll get emails to remind you about your events, so you don't forget them. It's really convenient and makes planning events simple! This project shows how I'm good at making things that people can use easily.<br><br><b>Client Name</b>: Ubaid Gohar<br><br><center><a href='ediary-details.html' class='btn btn-info btn-sm'>View Full Detail</a></center>";
               break;
 
               case "Academy MS":
-               projectContent = "<b>Academy Management System</b> This project is all about helping academies and institutes run smoothly. It's like a special tool that makes handling things like courses, teachers, students, and money really easy. With this project, I'm showing how I can make a system that helps academies and institutes and places of learning work better.<br><br><b>Client Name</b>: Ihtiram Ullah<br><br><center><a href='academy-details.html' class='btn btn-info btn-sm'>View Full Detail</a></center>";
+                window.location.href = "academy-details.html";
+              //  projectContent = "<b>Academy Management System</b> This project is all about helping academies and institutes run smoothly. It's like a special tool that makes handling things like courses, teachers, students, and money really easy. With this project, I'm showing how I can make a system that helps academies and institutes and places of learning work better.<br><br><b>Client Name</b>: Ihtiram Ullah<br><br><center><a href='academy-details.html' class='btn btn-info btn-sm'>View Full Detail</a></center>";
               break;
 
               case "lawyer Case MS":
-               projectContent = "<b>lawyer Case Management System</b> This project is all about helping academies and institutes run smoothly. It's like a special tool that makes handling things like courses, teachers, students, and money really easy. With this project, I'm showing how I can make a system that helps academies and institutes and places of learning work better.<br><br><b>Client Name</b>: Ubaid Ullah Khattak<br><br><center><a href='caseMangement-details.html' class='btn btn-info btn-sm'>View Full Detail</a></center>";
+                window.location.href = "caseMangement-details.html";
+               //projectContent = "<b>lawyer Case Management System</b> This project is all about helping academies and institutes run smoothly. It's like a special tool that makes handling things like courses, teachers, students, and money really easy. With this project, I'm showing how I can make a system that helps academies and institutes and places of learning work better.<br><br><b>Client Name</b>: Ubaid Ullah Khattak<br><br><center><a href='caseMangement-details.html' class='btn btn-info btn-sm'>View Full Detail</a></center>";
               break;
 
 
               case "Event Cark Maker":
-               projectContent = "<b>Event Cark Maker</b> Create personalized cards easily for Birthdays, Anniversaries, Weddings, and Thank Yous. Unique drag-and-drop custom card design feature. Intuitive, real-time, and downloadable PDF format enhance user experience.<br><br><b>Client Name</b>: Huzaifa Bin Afzal<br><br><center><a href='cardMaker-details.html' class='btn btn-info btn-sm'>View Full Detail</a></center>";
+                window.location.href = "cardMaker-details.html";
+               //projectContent = "<b>Event Cark Maker</b> Create personalized cards easily for Birthdays, Anniversaries, Weddings, and Thank Yous. Unique drag-and-drop custom card design feature. Intuitive, real-time, and downloadable PDF format enhance user experience.<br><br><b>Client Name</b>: Huzaifa Bin Afzal<br><br><center><a href='cardMaker-details.html' class='btn btn-info btn-sm'>View Full Detail</a></center>";
               break;
 
             default:
-              projectContent = "<b>Friendbook</b> As part of my final year project, I created an online platform called FriendBook. This platform lets users sign up, log in, update profiles, make posts, view content, and interact with others. I handled user registration and login, post creation and viewing, as well as features like friend requests and messaging. Additionally, I designed an admin dashboard to review reported accounts and posts, emphasizing my skills in web development and user security.<br><br><center><a href='friendbook-details.html' class='btn btn-info btn-sm'>View Full Detail</a></center>";
+              window.location.href = "friendbook-details.html";
+              //projectContent = "<b>Friendbook</b> As part of my final year project, I created an online platform called FriendBook. This platform lets users sign up, log in, update profiles, make posts, view content, and interact with others. I handled user registration and login, post creation and viewing, as well as features like friend requests and messaging. Additionally, I designed an admin dashboard to review reported accounts and posts, emphasizing my skills in web development and user security.<br><br><center><a href='friendbook-details.html' class='btn btn-info btn-sm'>View Full Detail</a></center>";
           }
 
           projectDetail.innerHTML = projectContent;

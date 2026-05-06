@@ -35,7 +35,7 @@ I enjoy solving problems, learning new technologies, and creating projects that 
 ---
 
 ## 📞 Contact
-📧 **Email:** [zohaibkhan@example.com](mailto:kzohaib9000@gmail.com)  
+📧 **Email:** [kzohaib9000@gmail.com](mailto:kzohaib9000@gmail.com)  
 💬 **WhatsApp:** [Chat Now](https://wa.me/923139943227)
 
 ---
